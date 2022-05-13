@@ -24,8 +24,8 @@
 
 在线预览
 
-> `👁‍🗨` 地址1：Github
-> `👁‍🗨` 地址2：Codepen：<https://codepen.io/dragonir/full/OJQRBad>
+> `👁‍🗨` Github：<https://dragonir.github.io/shengshengbuxi/>
+> `👁‍🗨` Codepen：<https://codepen.io/dragonir/full/OJQRBad>
 
 ## 实现
 
@@ -379,7 +379,7 @@ var value = style.getPropertyValue(property);
 }
 ```
 
-> 完整代码：
+> 完整代码：<https://github.com/dragonir/shengshengbuxi>
 
 ## 总结
 
