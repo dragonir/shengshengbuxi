@@ -383,6 +383,8 @@ var value = style.getPropertyValue(property);
 
 ## 总结
 
+本文包含的知识点主要包括：
+
 * `repeating-linear-gradient` 条纹背景
 * `clip-path` 形状裁切
 * `background-clip` 设置元素的背景延伸
