@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>声生不息Logo</title>
+  <link rel="shortcut icon" href="./logo.png">
+  <link rel="apple-touch-icon" href="./logo.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./logo.png">
+  <link rel="Bookmark" href="./logo.png" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    :root {
+      --black: #010101;
+      --red: #F66034;
+      --blue: #0A68DF;
+    }
+    html, body {
+      background: var(--black);
+      height: 100%;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .bg {
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      right: -50%;
+      bottom: -50%;
+      width: 200%;
+      height: 200vh;
+      background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAADFBMVEUvLy9eXl6AgICoqKhWH7o7AAAABHRSTlMSEhIS3WyPCwAAA1hJREFUOMsN0M3rDHEcwPH3d3y/4zcr67s1s3bIU62y8nBxcVCf79pZ4WBWsx6TVbvyEKUolJrxmBTj4SecVqE4OTjgIP6D5eC8DkouOJAj19fxhXJCWn811mk1Sp1q0J0q6AoNF7ZQ0uD+74CBj3otoUUEmJc0wqVEr2Ulatp1/6HYA9SGwfn+s6ftD8zsbic1idsPVrfcoQRYSrvbd7PdA7TY6cKcbfrwRXaJaqgTXSfDKd625S7XGB1YraJ0yuatOJmJvf5aqIwYINvBGIr+gZiDl80Qdoh3M1GTfuCzf1+yEetme3loJ3Hf6yijG5S9rRa7XI7Nzu1AYGF5Bd1cNeplTmN8yJpV8kYrpKEIAzXDgbBK2QhhTb37NP4P1aqRZ3ua6DVLb2AKjVpgBkbHie4QGFVqxDcpgL4tlTUMNKKgazpmWC+CkBBkTu59dpl+XikMg+U5izd/9z+KpxcFYvxxs01Vtho32XLZBNRmy8YWQBszOV6ES9r7cvQdshRbKVdfOrDKeyB+MeXsWvMmI95/Pdsp7J5MydZHR9MonithyhIllnSppjGaQRkb7vVyTaqNhLUsVI5I/HEDi3JYWdu+KEgsmkzJXGPZ97wQyqPREfp+vmAvzo3AfhF9HvZS1SiZL9H4pVgfhmofCltJ3wxq9/961Aaqq3HpzsFroqtPe9SVm3Ol5yd3f99TueB46l+9lB/drm4PxXs/4j4j5k6pAzS88njnDp72JijRYlYFRMaxfY8q20pWZjGLdKsCP2YoVYXl9RK1Kp7Xpx8MLYEe+gIWlUDwJNABR0AVAGQ4rfcCrci5YQYZonhi9ckLVrkTeCTeL5+0H7+Lw1baYjGu+6ddepc6qeLc8EhvL3dvf5Xi9maHyrGnCmFXXo7bk83O3C6FFYVDURtfLD4YVUpO011EfYvktpukxpKogevhPViJPC6tmWnOcxkaJYnwOw2zyoYKeAmKIlfpILLxBmOo3yLlkzh5+yTKmkvtrsc3oP8Tx7t8YTms2Be9a0TJNJ21Gb6k5mwY9Vn/P2vRSHu7tiZ2kx6mrMtCoqPG+9w3YWxOw5EZDcszz+tUQhZlq8j8Rw77ynqzi7XaV3kH8x62ScfWdhZpkgX3wWdZcibtbFASgOEfZmfZzbdc/O0AAAAASUVORK5CYII=') repeat 0 0;
+      background-repeat: repeat;
+      animation: bg-animation .2s infinite;
+      opacity: .9;
+      visibility: visible;
+    }
+    @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+    }
+    .logo {
+      display: flex;
+      position: relative;
+      margin-top: -250px;
+    }
+    .cycle {
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .cycle_1 {
+      z-index: 2;
+      background: var(--red);
+      background:repeating-linear-gradient(180deg,var(--red),var(--red) 12px, var(--black) 0,  var(--black) 22px);
+      border: 12px solid var(--black);
+    }
+    .cycle_2 {
+      margin-left: -160px;
+      background: linear-gradient(to right, var(--red), var(--blue));
+      border: 12px solid var(--black);
+    }
+    .cycle_2::before {
+      position: absolute;
+      box-sizing: border-box;
+      top: -12px;
+      left: -12px;
+      content: '';
+      display: inline-block;
+      height: 500px;
+      width: 500px;
+      background: linear-gradient(to right, var(--red), var(--blue));
+      border-radius: 50%;
+      -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+      clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+      z-index: 3;
+      border: 12px solid var(--black);
+    }
+    .cycle_1::after, .cycle_2::after {
+      content: '';
+      display: inline-block;
+      height: 200px;
+      width: 200px;
+      background: var(--black);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -100px;
+      border-radius: 50%;
+      z-index: 3;
+    }
+    .text {
+      font-size: 240px;
+      position: absolute;
+      bottom: -300px;
+      left: -30px;
+      width: 120%;
+      margin-left: -10%;
+      text-align: center;
+      background: linear-gradient(to right, var(--blue), var(--red));
+      -webkit-background-clip: text;
+      background-clip: text;
+	    -webkit-text-fill-color: transparent;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      letter-spacing: -40px;
+    }
+    .toggle {
+      position: fixed;
+      top: -160px;
+      right: -120px;
+      background: #FFF;
+      display: inline-block;
+      height: 360px;
+      width: 360px;
+      background: linear-gradient(to left bottom, var(--blue), rgba(0, 0, 0, 0)), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAADFBMVEUvLy9eXl6AgICoqKhWH7o7AAAABHRSTlMSEhIS3WyPCwAAA1hJREFUOMsN0M3rDHEcwPH3d3y/4zcr67s1s3bIU62y8nBxcVCf79pZ4WBWsx6TVbvyEKUolJrxmBTj4SecVqE4OTjgIP6D5eC8DkouOJAj19fxhXJCWn811mk1Sp1q0J0q6AoNF7ZQ0uD+74CBj3otoUUEmJc0wqVEr2Ulatp1/6HYA9SGwfn+s6ftD8zsbic1idsPVrfcoQRYSrvbd7PdA7TY6cKcbfrwRXaJaqgTXSfDKd625S7XGB1YraJ0yuatOJmJvf5aqIwYINvBGIr+gZiDl80Qdoh3M1GTfuCzf1+yEetme3loJ3Hf6yijG5S9rRa7XI7Nzu1AYGF5Bd1cNeplTmN8yJpV8kYrpKEIAzXDgbBK2QhhTb37NP4P1aqRZ3ua6DVLb2AKjVpgBkbHie4QGFVqxDcpgL4tlTUMNKKgazpmWC+CkBBkTu59dpl+XikMg+U5izd/9z+KpxcFYvxxs01Vtho32XLZBNRmy8YWQBszOV6ES9r7cvQdshRbKVdfOrDKeyB+MeXsWvMmI95/Pdsp7J5MydZHR9MonithyhIllnSppjGaQRkb7vVyTaqNhLUsVI5I/HEDi3JYWdu+KEgsmkzJXGPZ97wQyqPREfp+vmAvzo3AfhF9HvZS1SiZL9H4pVgfhmofCltJ3wxq9/961Aaqq3HpzsFroqtPe9SVm3Ol5yd3f99TueB46l+9lB/drm4PxXs/4j4j5k6pAzS88njnDp72JijRYlYFRMaxfY8q20pWZjGLdKsCP2YoVYXl9RK1Kp7Xpx8MLYEe+gIWlUDwJNABR0AVAGQ4rfcCrci5YQYZonhi9ckLVrkTeCTeL5+0H7+Lw1baYjGu+6ddepc6qeLc8EhvL3dvf5Xi9maHyrGnCmFXXo7bk83O3C6FFYVDURtfLD4YVUpO011EfYvktpukxpKogevhPViJPC6tmWnOcxkaJYnwOw2zyoYKeAmKIlfpILLxBmOo3yLlkzh5+yTKmkvtrsc3oP8Tx7t8YTms2Be9a0TJNJ21Gb6k5mwY9Vn/P2vRSHu7tiZ2kx6mrMtCoqPG+9w3YWxOw5EZDcszz+tUQhZlq8j8Rw77ynqzi7XaV3kH8x62ScfWdhZpkgX3wWdZcibtbFASgOEfZmfZzbdc/O0AAAAASUVORK5CYII=');
+      color: #FFFFFF;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .25s ease-in-out;
+    }
+    .toggle:hover {
+      box-shadow: 1px 1px 40px rgba(255, 255, 255, .3);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <span class="toggle" id="toggle" title="点击切换颜色"></span>
+  <div class="logo">
+    <div class="cycle cycle_1"></div>
+    <div class="cycle cycle_2"></div>
+    <h1 class="text">声生不息</h1>
+  </div>
+
+  <script>
+    // 获取根元素
+    const root = document.querySelector(':root');
+    // 创建获取变量值的函数
+    const getCssVariable = (key) =>  {
+      return getComputedStyle(root).getPropertyValue(key);
+    }
+    // 创建设置变量值的函数
+    const setCssVariable = (key, value) => {
+      root.style.setProperty(key, value);
+    }
+    document.getElementById('toggle').addEventListener('click', () => {
+      if (getCssVariable('--blue') === '#FFFFFF') {
+        setCssVariable('--blue', '#0A68DF');
+        setCssVariable('--red', '#F66036');
+      } else {
+        setCssVariable('--blue', '#FFFFFF');
+        setCssVariable('--red', '#FFFFFF');
+      }
+    }, false);
+    </script>
+</body>
+</html>
